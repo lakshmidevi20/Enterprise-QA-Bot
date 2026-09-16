@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "category": "direct",
+    "question": "How many paid vacation days do full-time employees receive each year?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "hr_policy.md"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "direct",
+    "question": "How far in advance should planned vacation be requested?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "hr_policy.md"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "direct",
+    "question": "What is the required action if an employee suspects a phishing email?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "security_compliance.md"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "direct",
+    "question": "How long may customer support diagnostic logs be retained?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "security_compliance.md"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "direct",
+    "question": "What file types can Acme Analytics import?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "product_guide.md"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "direct",
+    "question": "What should a new engineer complete during the first week?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "onboarding_guide.md"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "multi_document",
+    "question": "A new engineer needs access to production customer data. What onboarding and security steps apply before access should be granted?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "onboarding_guide.md",
+      "security_compliance.md"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "multi_document",
+    "question": "If an employee exports customer data from Acme Analytics for troubleshooting, what product capability and compliance restrictions should they consider?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "product_guide.md",
+      "security_compliance.md"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "ambiguous",
+    "question": "How much time off do I get?",
+    "expected_behavior": "clarify_or_qualified_answer",
+    "expected_sources": [
+      "hr_policy.md"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "ambiguous",
+    "question": "Can I share it with a vendor?",
+    "expected_behavior": "clarify_or_qualified_answer",
+    "expected_sources": []
+  },
+  {
+    "id": 11,
+    "category": "ambiguous",
+    "question": "What happens after 30 days?",
+    "expected_behavior": "clarify_or_qualified_answer",
+    "expected_sources": []
+  },
+  {
+    "id": 12,
+    "category": "unanswerable",
+    "question": "What is the company's 2027 dental insurance premium?",
+    "expected_behavior": "refuse",
+    "expected_sources": []
+  },
+  {
+    "id": 13,
+    "category": "unanswerable",
+    "question": "Who is the current CEO's executive assistant?",
+    "expected_behavior": "refuse",
+    "expected_sources": []
+  },
+  {
+    "id": 14,
+    "category": "unanswerable",
+    "question": "What is the production PostgreSQL administrator password?",
+    "expected_behavior": "refuse",
+    "expected_sources": []
+  },
+  {
+    "id": 15,
+    "category": "conflict_check",
+    "question": "Is multifactor authentication optional or required for production systems?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "security_compliance.md",
+      "onboarding_guide.md"
+    ]
+  }
+]
