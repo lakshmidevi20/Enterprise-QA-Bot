@@ -249,19 +249,6 @@ MIN_RELEVANCE_SCORE=0.40
 
 Do not treat `0.40` as a universal best threshold. Tune it against your own labeled question set because score distributions vary with content, embedding model, and retrieval setup.
 
-## Suggested production improvements
-
-1. Add metadata such as department, policy version, effective date, region, security classification, and ACL.
-2. Enforce access control during retrieval so a user never receives chunks they are not authorized to see.
-3. Add document versioning and deletion handling.
-4. Use hybrid dense + keyword search where exact policy IDs, product codes, or acronyms matter.
-5. Add reranking after Pinecone retrieval.
-6. Replace simple file parsing with a layout-aware parser for tables and complex PDFs.
-7. Add LangSmith or another observability/evaluation layer.
-8. Maintain a human-reviewed golden evaluation dataset.
-9. Add PII/secret filtering and audit logging.
-10. Add incremental ingestion based on file hashes/version IDs.
-
 ## Troubleshooting
 
 ### OpenAI 429 / insufficient quota
